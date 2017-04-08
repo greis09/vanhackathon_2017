@@ -7,4 +7,5 @@ const events = {
     end: 'parser.end'
   }
 };
+
 module.exports = events;

@@ -10,7 +10,8 @@ const Logger = new (winston.Logger)({
       level: 'silly',
       handleExceptions: true,
       timestamp: function () {
-        let date = new Date();
+        let date;
+        date = new Date();
         return date.toJSON();
       },
       formatter: function (options) {

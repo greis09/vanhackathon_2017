@@ -6,8 +6,8 @@
   "scripts": {
     "lint": "node ./node_modules/eslint/bin/eslint.js --ext js ./",
     "test": "jest",
-    "dev": "node ./node_modules/nodemon/bin/nodemon.js app.js",
-    "prd": "node app.js"
+    "dev": "node ./node_modules/nodemon/bin/nodemon.js app/app.js",
+    "prd": "node app/app.js"
   },
   "pre-push": [
     "test",

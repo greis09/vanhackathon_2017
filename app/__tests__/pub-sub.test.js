@@ -1,4 +1,4 @@
-const pubsub = require('./../lib/pub-sub');
+const pubsub = require('../lib/pub-sub');
 
 test('pubsub exists', () => {
   expect(pubsub).toBeDefined();

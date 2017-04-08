@@ -4,8 +4,15 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "node ./node_modules/eslint/bin/eslint.js --ext js ./",
+    "test": "jest",
+    "dev": "node ./node_modules/nodemon/bin/nodemon.js app.js",
+    "prd": "node app.js"
   },
+  "pre-push": [
+    "test",
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/greis09/vanhackathon_2017.git"
@@ -15,9 +22,18 @@
   "bugs": {
     "url": "https://github.com/greis09/vanhackathon_2017/issues"
   },
+  "jest": {},
   "homepage": "https://github.com/greis09/vanhackathon_2017#readme",
   "dependencies": {
     "google-auth-library": "^0.10.0",
-    "googleapis": "^18.0.0"
+    "googleapis": "^18.0.0",
+    "winston": "^2.3.1",
+    "xml2js": "^0.4.17"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "jest": "^19.0.2",
+    "nodemon": "^1.11.0",
+    "pre-push": "^0.1.1"
   }
 }

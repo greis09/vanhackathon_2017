@@ -1,5 +1,3 @@
-
-
 var fs = require('fs');
 var readline = require('readline');
 var google = require('googleapis');
@@ -9,11 +7,11 @@ var googleAuth = require('google-auth-library');
 // at ~/.credentials/drive-nodejs-quickstart.json
 var SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly'];
 var TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH ||
-    process.env.USERPROFILE) + '/.credentials/';
+  process.env.USERPROFILE) + '/.credentials/';
 var TOKEN_PATH = TOKEN_DIR + 'drive-nodejs-quickstart.json';
 
 // Load client secrets from a local file.
-fs.readFile('client_secret.json', function processClientSecrets(err, content) {
+fs.readFile('client_secret.json', function processClientSecrets (err, content) {
   if (err) {
     console.log('Error loading client secret file: ' + err);
     return;
@@ -30,7 +28,7 @@ fs.readFile('client_secret.json', function processClientSecrets(err, content) {
  * @param {Object} credentials The authorization client credentials.
  * @param {function} callback The callback to call with the authorized client.
  */
-function authorize(credentials, callback) {
+function authorize (credentials, callback) {
   var clientSecret = credentials.installed.client_secret;
   var clientId = credentials.installed.client_id;
   var redirectUrl = credentials.installed.redirect_uris[0];
@@ -38,7 +36,7 @@ function authorize(credentials, callback) {
   var oauth2Client = new auth.OAuth2(clientId, clientSecret, redirectUrl);
 
   // Check if we have previously stored a token.
-  fs.readFile(TOKEN_PATH, function(err, token) {
+  fs.readFile(TOKEN_PATH, function (err, token) {
     if (err) {
       getNewToken(oauth2Client, callback);
     } else {
@@ -56,7 +54,7 @@ function authorize(credentials, callback) {
  * @param {getEventsCallback} callback The callback to call with the authorized
  *     client.
  */
-function getNewToken(oauth2Client, callback) {
+function getNewToken (oauth2Client, callback) {
   var authUrl = oauth2Client.generateAuthUrl({
     access_type: 'offline',
     scope: SCOPES
@@ -66,9 +64,9 @@ function getNewToken(oauth2Client, callback) {
     input: process.stdin,
     output: process.stdout
   });
-  rl.question('Enter the code from that page here: ', function(code) {
+  rl.question('Enter the code from that page here: ', function (code) {
     rl.close();
-    oauth2Client.getToken(code, function(err, token) {
+    oauth2Client.getToken(code, function (err, token) {
       if (err) {
         console.log('Error while trying to retrieve access token', err);
         return;
@@ -85,7 +83,7 @@ function getNewToken(oauth2Client, callback) {
  *
  * @param {Object} token The token to store to disk.
  */
-function storeToken(token) {
+function storeToken (token) {
   try {
     fs.mkdirSync(TOKEN_DIR);
   } catch (err) {
@@ -102,16 +100,16 @@ function storeToken(token) {
  *
  * @param {google.auth.OAuth2} auth An authorized OAuth2 client.
  */
-function listFiles(auth) {
+function listFiles () {
   var service = google.drive('v3');
   /*service.files.list({
-    auth: auth,
-    pageSize: 10,
-    fields: "nextPageToken, files(id, name)"
-  }*/
+   auth: auth,
+   pageSize: 10,
+   fields: "nextPageToken, files(id, name)"
+   }*/
   service.files.get({
-    fileId:'0B43BqeuCgHWsWENnNlljSXZSY0E'
-  }, function(err, response) {
+    fileId: '0B43BqeuCgHWsWENnNlljSXZSY0E'
+  }, function (err, response) {
     if (err) {
       console.log('The API returned an error: ' + err);
       return;

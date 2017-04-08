@@ -1,0 +1,52 @@
+<component name="libraryTable">
+  <library name="jest" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="node_modules" />
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/node_modules/jest-config" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-runtime" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-jasmine2" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-matchers" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-haste-map" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-matcher-utils" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-message-util" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-diff" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-environment-jsdom" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-util" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-resolve" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-mock" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-environment-node" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-validate" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-snapshot" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-file-exists" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-resolve-dependencies" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-changed-files" />
+        <item url="file://$PROJECT_DIR$/node_modules/jest-regex-util" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/node_modules/jest-config" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-runtime" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-jasmine2" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-matchers" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-haste-map" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-matcher-utils" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-message-util" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-diff" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-environment-jsdom" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-util" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-resolve" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-mock" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-environment-node" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-validate" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-snapshot" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-file-exists" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-resolve-dependencies" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-changed-files" />
+      <root url="file://$PROJECT_DIR$/node_modules/jest-regex-util" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

@@ -15,7 +15,7 @@ npm run lint
 We're using editorconfig to manage editor config. If you're IDE does not have native support, please check if it has support:
 [editorconfig.com](http://editorconfig.org/#download)
 
-####Code Quality: ####
+#### Code Quality: ####
 Add Eslint live check for your IDE to prevent errors. Otherwise you'll know the errors only when pushing your code and waste more time to fix everything.
 
 #### PubSub module:
